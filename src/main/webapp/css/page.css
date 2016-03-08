@@ -1,0 +1,49 @@
+/********************监控项配置*******************/
+/*弹出框*/
+.mask_diag .mask_main{width:1000px;height:362px;margin-left:-40%;margin-top:-181px;}	
+.diag_tab_tp li{position:relative;width:9%;margin-left:8%;margin-right:8%;float:left;text-align:center;
+color:#494949;font-size:18px;font-weight:normal;border-bottom:1px solid #fff;padding-bottom:4px;
+-webkit-transition:all 300ms;}
+.diag_tab_tp li.active{color:#43a2d2;border-bottom:1px solid #43a2d2;padding-bottom:4px;}
+.diag_tab_tp li.active .diag_cion{position:absolute;width:0;height:0;bottom:0px;
+border-left: 5px solid transparent;border-right: 5px solid transparent;
+border-bottom: 6px solid #43a2d2;display:block;left:50%;margin-left:-5px;}
+.diag_tab_block{width:100%;}
+.close_btn{position:absolute;right:20px;top:20px;display:block;font-size:20px;
+color:#000;-webkit-transition:all 1s;-moz-transition:all 1s;
+transition:all 1s}
+.close_btn:hover{-webkit-transform: rotate(360deg);-moz-transform: rotate(360deg);transform: rotate(360deg);
+color:#00adef;}
+/*页面主体*/
+.main_mon_list{width:98%;margin:10px auto 20px;border-top:2px solid #a7e7ff;background:#fbfbfb;
+height:394px;overflow:hidden;clear:both;}
+.main_mon_tablist{border-top:0px;}
+.main_one_detail{height:56px;margin:0 auto;clear:both;position:relative;}
+/*数据列表*/
+.data_list{width:100%;}
+.data_tp{height:40px;line-height:40px;width:15%;float:left;}
+.data_tp li{border-bottom:1px solid #000;text-align:center;color:#828282;font-size:15px;cursor:pointer;}
+.data_tp li.active{background:#f2f2f2;}
+
+.mask_diag{}
+.diag_main{float:right;width:85%;}
+.diag_tab_bt{}
+.loading_one{position:absolute;width:28px;height:28px;right:32px;top:16px;cursor:pointer;}
+.loading_one_active{-webkit-animation:rotate 2s linear infinite;
+					-moz-animation:rotate 2s linear infinite;animation:rotate 2s linear infinite;}
+@-webkit-keyframes rotate{
+ 0%{ -webkit-transform:rotate(0deg) translateZ(0);}
+  100%{ -webkit-transform:rotate(360deg) translateZ(0);}
+}
+@-moz-keyframes rotate{
+ 0%{ -moz-transform:rotate(0deg) translateZ(0);}
+  100%{ -moz-transform:rotate(360deg) translateZ(0);}
+}
+@keyframes rotate{
+ 0%{transform:rotate(0deg) translateZ(0);}
+  100%{transform:rotate(360deg) translateZ(0);}
+}
+
+/*  监控dos */
+.scrollDiv{height:625px;background:#000;line-height:25px;overflow:hidden;width:98%;margin:10px auto;}
+.scrollDiv li{height:25px;padding-left:10px;color:#fff;}

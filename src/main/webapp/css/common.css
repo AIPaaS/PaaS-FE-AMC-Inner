@@ -1,0 +1,40 @@
+@charset "utf-8";
+/********重置**********/
+html,body{-webkit-tap-highlight-color:rgba(0,0,0,0);color:#696969;font:12px arial,"微软雅黑",Helvetica;margin:0;padding:0;width:100%;height:100%;}
+form,table,td,h1,h2,h3,h4,ul,ol,li,p{margin:0;padding:0;border:0;list-style:none}
+input,img{vertical-align:middle}
+html,body{min-width:100%;height: 100%;}
+body{-webkit-text-size-adjust:none;}
+img{border:0 none;height:auto; max-width: 100%;}
+ol,ul{list-style:none;}
+:focus{outline:0;}
+a{ color:inherit;}
+textarea{resize:none;overflow:auto;}
+a{-webkit-touch-callout:none;-webkit-user-select:none;text-decoration:none}
+table{border-collapse: collapse;border-spacing: 0;}
+input{ border:none;}
+input:focus,textarea:focus{outline:0}
+dd{ margin: 0;}
+/***************通用****************/
+.trans_all{-webkit-transition:  all 300ms;-ms-transition:  all 300ms;-o-transition:  all 300ms;-moz-transition:  all 300ms;transition:  all 300ms;}
+.trans_color{-webkit-transition:  color 300ms;-ms-transition:  color 300ms;-o-transition:  color 300ms;-moz-transition:  color 300ms;transition:  color 300ms;}
+.trans_background{-webkit-transition:  background 300ms;-ms-transition:  background 300ms;-o-transition:  background 300ms;-moz-transition:  background 300ms;transition:  background 300ms;}
+.trans_bottom{-webkit-transition:  bottom 300ms;-ms-transition:  bottom 300ms;-o-transition:  bottom 300ms;-moz-transition:  bottom 300ms;transition:  bottom 300ms;}
+.trans_left{-webkit-transition:  left 300ms linear;-ms-transition:  left 300ms linear;-o-transition:  left 300ms linear;-moz-transition:  left 300ms linear;transition:  left 300ms linear;}
+.trans_height{-webkit-transition:  height 300ms;-ms-transition:  height 300ms;-o-transition:  height 300ms;-moz-transition:  height 300ms;transition:  height 300ms;}
+.trans_width{-webkit-transition:  width 300ms;-ms-transition:  width 300ms;-o-transition:  width 300ms;-moz-transition:  width 300ms;transition:  width 300ms;}
+.trans_opacity{-webkit-transition:  opacity 300ms;-ms-transition:  opacity 300ms;-o-transition:  opacity 300ms;-moz-transition:  opacity 300ms;transition:  opacity 300ms;}
+.trans-box-shadow{-webkit-box-shadow: 0 0 6px 0 rgba(211,220,224,.75);-moz-box-shadow: 0 0 6px 0 rgba(0,0,0,.8);-o-box-shadow: 0 0 8px 0 rgba(211,220,224,.75);
+-ms-box-shadow: 0 0 6px 0 rgba(211,220,224,.75); box-shadow: 0 0 6px 0 rgba(211,220,224,.75);}
+[monitor-transition]{-webkit-transition:  all 500ms;-ms-transition:  all 500ms;-o-transition:  all 500ms;-moz-transition:  all 500ms;transition:  all 500ms;}
+.clear:after{content: ""; display: block; width: 0; height: 0; visibility: hidden; clear: both;}
+/***************头部***************/
+#wrap{ min-height: 100%; position: relative; }
+/************中心内容区域***********/
+.main{width:100%;height:auto;overflow:hidden;min-width:1154px;}
+/****************按钮效果************/
+.x_btn{display:block;border:1px solid #00adef;font-weight:normal;color:#00adef;text-align:center;-webkit-border-radius:3px;
+		-moz-border-radius:3px;border-radius:3px;
+  		-webkit-transition:  background 300ms;-ms-transition:  background 300ms;-o-transition:  background 300ms;
+      	-moz-transition:  background 300ms;transition:  background 300ms;}
+.x_btn:hover{background-color: #00adef; color:#fff;border:1px solid #00adef;}
