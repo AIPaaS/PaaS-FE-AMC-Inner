@@ -1,5 +1,6 @@
 var lastLogId;
 var lastLogTime;
+var interval=100;
 
 $(function(){
 	 reload();
@@ -21,6 +22,7 @@ function reload(){
 			lastLogTime:lastLogTime
 		},
 		success: function(data){
+			
 			 var datasize = data.length;
 			 $(data).each(function (i) {
 				 $(".scrul").append("<li><span style='color:red'>"+this.timeStamp+"</span>"+this.payload+"</li>");
@@ -29,7 +31,6 @@ function reload(){
 					 lastLogTime=this.timeStamp;
 					 }
 			   });
-			
 		},
 		error : function(data) {
 			//alert("NONO");
@@ -49,7 +50,7 @@ function setval(){
                   AutoScroll("#s1");
               }
           }
-          },100);
+          },interval);
 }
 var tops = 0;
 function AutoScroll(obj){
