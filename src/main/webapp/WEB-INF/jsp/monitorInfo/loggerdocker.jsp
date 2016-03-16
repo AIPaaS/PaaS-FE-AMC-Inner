@@ -24,7 +24,6 @@ var dockerName='<%=request.getAttribute("dockerName").toString()%>';
 
 <div id="s1" class="scrollDiv">
 <ul class="scrul">
-             <li>支持</li>
              
   
 </ul>
