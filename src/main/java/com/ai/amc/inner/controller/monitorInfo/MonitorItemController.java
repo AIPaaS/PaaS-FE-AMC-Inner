@@ -5,6 +5,8 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Map;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Controller;
@@ -15,12 +17,14 @@ import com.ai.amc.core.po.Trends;
 import com.ai.amc.core.po.TrendsKey;
 import com.ai.amc.core.po.Trends_uint;
 import com.ai.amc.core.po.Trends_uintKey;
+import com.ai.amc.core.rest.IEsLogApi;
 import com.ai.amc.core.rest.IHistoryApi;
 import com.ai.amc.core.rest.IHostApi;
 import com.ai.amc.core.rest.IHostgroupApi;
 import com.ai.amc.core.rest.IItemApi;
 import com.ai.amc.core.rest.ITrendsApi;
 import com.ai.amc.core.rest.ITrends_uintApi;
+import com.ai.amc.core.vo.EsDockerLogVo;
 import com.ai.amc.core.vo.HistoryVo;
 import com.ai.amc.core.vo.HostVo;
 import com.ai.amc.core.vo.HostgroupVo;
@@ -48,7 +52,6 @@ public class MonitorItemController {
 	private ITrendsApi iTrendsApi;
 	@Reference
 	private ITrends_uintApi iTrends_uintApi;
-	
 	
 	@RequestMapping(value = "/index")
 	public String jumpto(HttpServletRequest request, HttpServletResponse resp){
@@ -233,8 +236,5 @@ public class MonitorItemController {
 			System.out.println(resultList.get(0)+"resultList.get(0)");
 		return resultList;
 	}
-	
-	
-	
 	
 }

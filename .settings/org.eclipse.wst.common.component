@@ -26,7 +26,11 @@
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Program/gradle-2.3/caches/modules-2/files-2.1/appssoclient/dev.json/1.0/c4dde1e0d40cb589937a726829099fb2aff4f8ba/dev.json-1.0.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
+<<<<<<< HEAD
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Program/gradle-2.3/caches/modules-2/files-2.1/com.ai.amc.be/paas-be-amc-be/0.1-SNAPSHOT/4e93ddce850ad549f25f8e02bfb931dfaab59aa0/paas-be-amc-be-0.1-SNAPSHOT.jar">
+=======
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Program/gradle-2.3/caches/modules-2/files-2.1/com.ai.amc.be/paas-be-amc-be/0.1-SNAPSHOT/f31177ba505737b2b331514c1d3e66c772dee06b/paas-be-amc-be-0.1-SNAPSHOT.jar">
+>>>>>>> remotes/choose_remote_name/PaaS-FE-AMC-Inner-DEV-FEATURE-0.0.1
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/Program/gradle-2.3/caches/modules-2/files-2.1/org.springframework/spring-web/3.2.5.RELEASE/b22389b536143f55ed230bc1199a6cd0b8639f4/spring-web-3.2.5.RELEASE.jar">

@@ -1,5 +1,9 @@
 #
+<<<<<<< HEAD
 #Wed Mar 09 20:26:05 CST 2016
+=======
+#Tue Mar 08 15:53:54 CST 2016
+>>>>>>> remotes/choose_remote_name/PaaS-FE-AMC-Inner-DEV-FEATURE-0.0.1
 org.eclipse.jdt.core.compiler.debug.localVariable=generate
 org.eclipse.jdt.core.compiler.compliance=1.7
 org.eclipse.jdt.core.compiler.codegen.unusedLocal=preserve
