@@ -2,10 +2,10 @@ package com.ai.amc.inner.controller.monitorInfo;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -233,4 +233,6 @@ public class MonitorItemController {
 			System.out.println(resultList.get(0)+"resultList.get(0)");
 		return resultList;
 	}
+	
+	
 }
