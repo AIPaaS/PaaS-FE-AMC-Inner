@@ -17,19 +17,16 @@ import com.ai.amc.core.po.Trends;
 import com.ai.amc.core.po.TrendsKey;
 import com.ai.amc.core.po.Trends_uint;
 import com.ai.amc.core.po.Trends_uintKey;
-import com.ai.amc.core.rest.IEsLogApi;
 import com.ai.amc.core.rest.IHistoryApi;
 import com.ai.amc.core.rest.IHostApi;
 import com.ai.amc.core.rest.IHostgroupApi;
 import com.ai.amc.core.rest.IItemApi;
 import com.ai.amc.core.rest.ITrendsApi;
 import com.ai.amc.core.rest.ITrends_uintApi;
-import com.ai.amc.core.vo.EsDockerLogVo;
 import com.ai.amc.core.vo.HistoryVo;
 import com.ai.amc.core.vo.HostVo;
 import com.ai.amc.core.vo.HostgroupVo;
 import com.ai.amc.core.vo.ItemVo;
-import com.ai.amc.inner.constants.Constants;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.fastjson.JSON;
 
@@ -236,5 +233,4 @@ public class MonitorItemController {
 			System.out.println(resultList.get(0)+"resultList.get(0)");
 		return resultList;
 	}
-	
 }

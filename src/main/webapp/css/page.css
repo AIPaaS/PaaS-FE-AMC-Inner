@@ -45,5 +45,5 @@ height:394px;overflow:hidden;clear:both;}
 }
 
 /*  监控dos */
-.scrollDiv{height:625px;background:#000;line-height:25px;overflow:hidden;width:98%;margin:10px auto;}
-.scrollDiv li{height:25px;padding-left:10px;color:#fff;}
+.scrollDiv{height:625px;background:#000;line-height:25px;overflow:auto;width:98%;margin:10px auto;}
+.scrollDiv li{padding-left:10px;color:#fff;}
