@@ -1,6 +1,8 @@
 package com.ai.amc.inner.controller.monitorInfo;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -36,5 +38,44 @@ public class LoggerDockerController {
 		String lastTime = request.getParameter("lastLogTime");
 		List<EsDockerLogVo> list = esLogApi.getDockerLogRoll(dockerName, lastId, lastTime);
 		return list;
+	}
+	
+	@RequestMapping("/getapplogfile")
+	@ResponseBody
+	public List<String> getAppLogFile(HttpServletRequest request, HttpServletResponse resp){
+		String containerName = request.getParameter("containerName");
+		List<String> list = esLogApi.getFilePathListByContainer(containerName);
+		return list;
+	}
+	
+	@RequestMapping("/getapplogroll")
+	@ResponseBody
+	public List<EsDockerLogVo> getAppLogRoll(HttpServletRequest request, HttpServletResponse resp){
+		String containerName = request.getParameter("containerName");
+		String keyword = request.getParameter("keyword");
+		String startTime = request.getParameter("startTime");
+		String endTime = request.getParameter("endTime");
+		int queryType = Integer.valueOf(request.getParameter("queryType"));
+		String id = request.getParameter("id");
+		String logTime = request.getParameter("logTime");
+		String filePaths = request.getParameter("filePaths");
+		String[] paths = new String[]{};
+		if(filePaths != null && filePaths.length() > 0) {
+			paths = filePaths.split(",",-1);
+		}
+		List<EsDockerLogVo> list = esLogApi.getAppLogRoll(containerName, keyword,  Arrays.asList(paths),
+				startTime, endTime, queryType, id, logTime);
+		return list;
+	}
+	
+	@RequestMapping("/getapplogContext")
+	@ResponseBody
+	public Map<String,List<EsDockerLogVo>> getAppLogContext(HttpServletRequest request, HttpServletResponse resp){
+		String containerName = request.getParameter("containerName");
+		String id = request.getParameter("id");
+		String logTime = request.getParameter("logTime");
+		String filePath = request.getParameter("filePath");
+		Map<String,List<EsDockerLogVo>> map = esLogApi.getAppLogContext(containerName, filePath, id, logTime);
+		return map;
 	}
 }
