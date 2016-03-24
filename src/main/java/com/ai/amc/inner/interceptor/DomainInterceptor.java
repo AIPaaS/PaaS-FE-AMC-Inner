@@ -19,7 +19,7 @@ public class DomainInterceptor implements HandlerInterceptor {
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {		
 		try {			
-			System.out.println("拦截器要做的逻辑--所有都拦截");	    
+			//System.out.println("拦截器要做的逻辑--所有都拦截");	    
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
