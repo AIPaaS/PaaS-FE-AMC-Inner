@@ -1,4 +1,8 @@
 /build
+<<<<<<< HEAD
 /.gradle
 /.settings
 .classpath
+=======
+/bin
+>>>>>>> 36f8f824bd4fef2d5240f5bf2193754dfdcc328e
