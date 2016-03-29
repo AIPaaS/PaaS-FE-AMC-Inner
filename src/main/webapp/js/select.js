@@ -251,9 +251,9 @@ function upanddown(sourcepath, _id, val,ply) {
 								}
 							});
 
-					$("#sometimes")
-							.append(
-									"<li style='text-align: center;'><h3><a id='moredown'>....加载更多....</a></h3></li>");
+//					$("#sometimes")
+//							.append(
+//									"<li style='text-align: center;'><h3><a id='moredown'>....加载更多....</a></h3></li>");
 
 				},
 				error : function(data) {
